@@ -4,3 +4,9 @@ In the process of becoming more familiar with implementation of Deep Learning an
 - Keras
 - PyTorch
 - Scikit-Learn
+
+# Setting up Conda Environment
+
+```conda create -n <environment-name> --file requirements.txt```
+
+
