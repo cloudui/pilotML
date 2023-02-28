@@ -5,8 +5,25 @@ In the process of becoming more familiar with implementation of Deep Learning an
 - PyTorch
 - Scikit-Learn
 
-# Setting up Conda Environment
+## Exporting Conda Environment 
+```bash
+# Preferred
+conda env export | grep -v "^prefix: " > environment.yml
+# Alternative
+conda list -e > req.txt
+```
 
-```conda create -n <environment-name> --file requirements.txt```
+## Setting up Conda Environment
+Preferred method: 
+```bash
+conda env create -f environment.yml
+# Set custom path if you want
+conda env create -f environment.yml -p $(path)
+```
+
+Alternative:
+```bash
+conda create -n <environment-name> --file requirements.txt
+```
 
 
